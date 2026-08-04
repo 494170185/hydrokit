@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hydrokit"
+version = "1.0.2"
+description = "Engineering hydrology toolkit: design storm, runoff, unit hydrograph, flood routing, channel hydraulics, evaporation, water balance"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+authors = [{ name = "494170185" }]
+
+[tool.setuptools.packages.find]
+include = ["hydrokit*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "C4", "SIM"]
+ignore = ["E501", "SIM108", "B008", "B905"]
