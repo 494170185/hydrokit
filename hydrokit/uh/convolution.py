@@ -5,7 +5,7 @@ from __future__ import annotations
 def convolve(excess_mm: list[float], uh_ordinates: list[float]) -> list[float]:
     """Return direct runoff hydrograph. Units preserved.
 
-    excess_mm[i] * uh_ords[j] summed into output[i+j].
+    excess_mm[i] * uh_ordinates[j] summed into output[i+j].
     """
     if not excess_mm or not uh_ordinates:
         return []
@@ -21,7 +21,7 @@ def convolve(excess_mm: list[float], uh_ordinates: list[float]) -> list[float]:
 
 def s_curve_from_uh(uh_ords: list[float], repetitions: int = 10) -> list[float]:
     """Build S-curve by summing UH shifted by its own duration."""
-    if not uh_ordinates or repetitions <= 0:
+    if not uh_ords or repetitions <= 0:
         return []
     out = [0.0] * (len(uh_ords) + repetitions)
     for r in range(repetitions):

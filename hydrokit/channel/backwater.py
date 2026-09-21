@@ -1,8 +1,6 @@
 """Gradually varied flow: standard step method for backwater curves."""
 from __future__ import annotations
 
-import math
-
 G = 9.81
 
 

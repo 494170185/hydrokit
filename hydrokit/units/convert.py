@@ -1,22 +1,22 @@
 """Unified convertor."""
 from __future__ import annotations
 
-from hydrokit.units import area as A
-from hydrokit.units import flow as F
-from hydrokit.units import length as L
-from hydrokit.units import time as T
+from hydrokit.units import area as area_u
+from hydrokit.units import flow as flow_u
+from hydrokit.units import length as length_u
+from hydrokit.units import time as time_u
 
 _MAP = {
-    ("km", "m"): L.km_to_m, ("m", "km"): L.m_to_km,
-    ("mm", "m"): L.mm_to_m, ("m", "mm"): L.m_to_mm,
-    ("cm", "m"): L.cm_to_m, ("m", "cm"): L.m_to_cm,
-    ("km2", "m2"): A.km2_to_m2, ("m2", "km2"): A.m2_to_km2,
-    ("ha", "m2"): A.ha_to_m2, ("m2", "ha"): A.m2_to_ha,
-    ("mu", "m2"): A.mu_to_m2, ("m2", "mu"): A.m2_to_mu,
-    ("hr", "s"): T.hr_to_s, ("s", "hr"): T.s_to_hr,
-    ("min", "s"): T.min_to_s, ("s", "min"): T.s_to_min,
-    ("day", "s"): T.day_to_s, ("s", "day"): T.s_to_day,
-    ("m3/s", "m3/h"): F.m3s_to_m3h, ("m3/h", "m3/s"): F.m3h_to_m3s,
+    ("km", "m"): length_u.km_to_m, ("m", "km"): length_u.m_to_km,
+    ("mm", "m"): length_u.mm_to_m, ("m", "mm"): length_u.m_to_mm,
+    ("cm", "m"): length_u.cm_to_m, ("m", "cm"): length_u.m_to_cm,
+    ("km2", "m2"): area_u.km2_to_m2, ("m2", "km2"): area_u.m2_to_km2,
+    ("ha", "m2"): area_u.ha_to_m2, ("m2", "ha"): area_u.m2_to_ha,
+    ("mu", "m2"): area_u.mu_to_m2, ("m2", "mu"): area_u.m2_to_mu,
+    ("hr", "s"): time_u.hr_to_s, ("s", "hr"): time_u.s_to_hr,
+    ("min", "s"): time_u.min_to_s, ("s", "min"): time_u.s_to_min,
+    ("day", "s"): time_u.day_to_s, ("s", "day"): time_u.s_to_day,
+    ("m3/s", "m3/h"): flow_u.m3s_to_m3h, ("m3/h", "m3/s"): flow_u.m3h_to_m3s,
 }
 
 

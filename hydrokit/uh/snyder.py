@@ -1,8 +1,6 @@
 """Snyder synthetic UH (regional)."""
 from __future__ import annotations
 
-import math
-
 
 def snyder_lag(l_main_km: float, l_centroid_km: float, ct: float = 2.0) -> float:
     """Basin lag in hours. ct typical 1.8-2.2 (mountain smaller)."""

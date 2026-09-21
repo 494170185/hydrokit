@@ -5,7 +5,9 @@ Wilson-Hilferty transform for upper tail approximation.
 """
 from __future__ import annotations
 
-from hydrokit.stats.frequency import cs as calc_cs, cv as calc_cv, mean
+from hydrokit.stats.frequency import cs as calc_cs
+from hydrokit.stats.frequency import cv as calc_cv
+from hydrokit.stats.frequency import mean
 from hydrokit.stats.normal import normal_ppf
 
 

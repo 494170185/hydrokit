@@ -31,5 +31,5 @@ class UnitHydrograph:
         i = max(range(len(self.ordinates)), key=lambda k: self.ordinates[k])
         return self.times[i], self.ordinates[i]
 
-    def scale(self, factor: float) -> "UnitHydrograph":
+    def scale(self, factor: float) -> UnitHydrograph:
         return UnitHydrograph(list(self.times), [q * factor for q in self.ordinates])

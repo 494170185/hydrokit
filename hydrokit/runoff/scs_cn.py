@@ -1,7 +1,7 @@
 """SCS-CN event runoff model + step-by-step version."""
 from __future__ import annotations
 
-from hydrokit.infiltration.curve_number import runoff_depth_cn, s_potential
+from hydrokit.infiltration.curve_number import s_potential
 
 
 def scs_cn_runoff(precip_series: list[float], cn: float, lambda_coef: float = 0.2) -> list[float]:

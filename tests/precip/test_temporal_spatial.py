@@ -1,5 +1,5 @@
 from hydrokit.precip.areal_reduction import arf_logarithmic
-from hydrokit.precip.spatial import areal_mean, area_reduction_factor, thiessen_weights
+from hydrokit.precip.spatial import area_reduction_factor, areal_mean, thiessen_weights
 from hydrokit.precip.temporal import scs_type_ii, triangular_pattern, uniform_pattern
 
 

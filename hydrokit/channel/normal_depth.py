@@ -1,8 +1,6 @@
 """Normal depth via bisection on Manning's equation."""
 from __future__ import annotations
 
-import math
-
 from hydrokit.channel.manning import hydraulic_radius_trapezoid, manning_q
 
 

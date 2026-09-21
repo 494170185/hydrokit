@@ -1,8 +1,6 @@
 """SCS (NRCS) dimensionless unit hydrograph."""
 from __future__ import annotations
 
-import math
-
 # SCS dimensionless UH ratios (t/tp, q/qp) — standard tabulation
 _SCS_DUH = [
     (0.0, 0.000), (0.1, 0.030), (0.2, 0.100), (0.3, 0.190), (0.4, 0.310),
